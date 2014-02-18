@@ -1,8 +1,28 @@
-:title: Slideshow Tutorial
+:title: Python For Beginners
 :author: Paul Logston
-:description: The Hovercraft! tutorial.
-:keywords: presentation, restructuredtext, impress.js, tutorial
+:description: A python tutorial prepared for NYC PyLadies
+:keywords: python, beginners, tutorial, NYC, PyLadies
 
+----
+
+Welcome
+=======
+
+
+asdf
+
+----
+
+What We Need 
+============
+
+
+
+
+----
+
+Lets Talk Python!
+=================
 
 
 * Intro to the interactive shell: numbers and arithmetic
@@ -14,13 +34,3 @@
 * for loops
 * Text editors and running a script from a file
 * Importing library modules and calling functions
-
-----
-
-
-Next Page
-
-
-----
-
-3rd Page
