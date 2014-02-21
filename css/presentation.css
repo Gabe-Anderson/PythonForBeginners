@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 200%;
+}
+
+.step {
+    
+}
+
+table {
+    
+}
+
+thead {
+    text-align: center;
+}
+
+th {
+
+}
+
+tbody {
+    text-align: left;
+}
+
+tr {
+
+}
+
+td {
+
+}
+
+p {
+    font-size: 125%;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+em {
+    font-family: Satisfy;
+    font-size: 142%;
+}
+
+strong {
+    font-family: Racing Sans One;
+    font-size: 127%;
+    letter-spacing: -2px;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: left;
+}
+
+ul li {
+    font-size: 125%;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    padding-left: 0.3em;
+    line-height: 1.8em;
+}
+
+ol {
+    text-align: left;
+}
+
+ol li {
+    font-size: 110%;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

@@ -2,21 +2,67 @@
 :author: Paul Logston
 :description: A python tutorial prepared for NYC PyLadies
 :keywords: python, beginners, tutorial, NYC, PyLadies
+:css: css/presentation.css
+
 
 ----
 
-Welcome
-=======
+NYC Pyladies Presents!
+======================
+Python for Beginners: Part I
+-----------------------------
 
+.. image:: media/pyladies_logo.jpeg
+  :height: 200
+  :width: 200
+  :scale: 50
 
-asdf
+=========  ===
+WiFi
+==============
+SSID:       <>
+Passowrd:   <>
+=========  ===
+
+<Date>
+<Location>
+
 
 ----
 
-What We Need 
+Who's Here
+==========
+
+- Paul (me)
+- Andy
+- Jon
+
+In spirit Barbara
+
+
+----
+
+What We Are Going To Cover
+==========================
+- Starting Python
+- Types + Operations
+- Variables
+- Conditional Constructs (if-else)
+- Loops
+- Functions
+- Exceptions
+- Modules and Imports
+
+
+
+----
+
+What We Need
 ============
 
+A text editor
 
+A command line
 
 
 ----
@@ -24,13 +70,24 @@ What We Need
 Lets Talk Python!
 =================
 
+- booleans Truthy and falsey
+- not operator
+- Python Types + Operations
+- Comparison Operators
+- Strings and Printing Out
+- Comments
+- Lists
+- Dictionaries
+- if elif else statements
+- while loops
+- for loops
+- functions
+- raw_input
+- imports modeuls (print out)
+- Objects
+- Bibliography
+- Thanks 
+- Check us Out
 
-* Intro to the interactive shell: numbers and arithmetic
-* Strings and printing (treating strings as atoms; don't index into characters until after we get to lists)
-* raw_input
-* if statements (introducing indentation)
-* while loops
-* lists and indexing
-* for loops
-* Text editors and running a script from a file
-* Importing library modules and calling functions
+
+Exercises parse a traceback and tell me whats going on
