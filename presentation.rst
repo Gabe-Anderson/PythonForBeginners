@@ -16,14 +16,15 @@ Python for Beginners: Part I
   :width: 200
   :scale: 50
 
-=========  ===
+=========  =====
 WiFi
-==============
-SSID:       <>
-Passowrd:   <>
-=========  ===
+================
+SSID:       *<POP>*
+Passowrd:   *<>*
+=========  =====
 
-<Date>
+Thursday, Feb. 27th 2014
+
 <Location>
 
 ----
@@ -75,8 +76,7 @@ A Text Editor
 
 A Command Line
 --------------
-  
-  ...
+
 
 ----
 
@@ -91,9 +91,10 @@ From the command line, type::
 
   python
 
-What you should see
+What we should see
 
-<Insert pic here>
+.. image:: media/python_shell.png
+  :width: 1000px
 
 ----
 
@@ -105,66 +106,149 @@ What is python?
 ----
 
 Python
-  A *program* that can take my 
-  *instructions* and act on them.
+======
+
+A *program* that can take my 
+*instructions* and act on them.
+
+|
 
 Why Python
-  >>>
+----------
 
-----
-
-Numbers 
-
-examples of nubmers
-
-----
-
-Numbers
-
-examples of numbers
-
-examples of + -
-
-----
-
-excersise of punching in numbers and getting them back
-excersise of arithmatic with numbers
+- Readable syntax
+- Lots of packages
+- Open Source!
 
 ----
 
 Numbers
+=======
 
-Multiply
-Divide
-
-----
-
-
-Floor division example
-
-----
-
-exercise of division (x2)
-floor and non floor
+::
+  
+  2
+  4L
+  -1
+  0
+  10e-4
+  2.27
 
 ----
 
-Other operators
+Numbers
+=======
 
-==
-!=
-<
->
-<=
->=
+What we can do with numbers...
+
+::
+
+  >>> 2 + 2
+  4
+  >>> 5 - 2
+  3
+  >>> 14 - 27
+  -13
 
 ----
 
-Operator examples
+Numbers
+=======
+
+Try these...
+
+::
+
+  >>> 4 + 20
+  >>> 500 - 7
+  >>> 4L - 1
 
 ----
 
-Operator exercises
+Numbers
+=======
+
+What about multiplication and division?
+
+We use ``*`` for multiplication and ``/`` for division.
+
+::
+
+  >>> 2 * 3
+  >>> 4 * 40
+  >>> 200 / 10
+  >>> 91 / 7
+
+----
+
+Numbers
+=======
+
+What if the division produces a remainder?
+
+::
+
+  >>> 7 / 3
+  ?
+
+----
+
+Numbers
+=======
+
+| ``/`` is the floor division operator in Python 2.x
+| ``/`` is the division we probably expect operator in Python 3.x
+
+If we want Python 2.x to return a float from a ``/`` operation,
+we need one of the operands to be a float.
+
+::
+  
+  >>> 2.0 / 5
+  0.4
+  >>> float(2) / 5
+  0.4
+
+----
+
+Equality Operators
+==================
+
+Not necessarily for numbers
+
+::
+
+  ==
+  !=
+  <
+  >
+  <=
+  >=
+
+----
+
+Equality Operators
+==================
+
+::
+  
+  >>> 5 == 5
+  True
+  >>> 5 == 1
+  False
+  >>> 5 != 1
+  True
+  >>> "PyLadies" == "PyLadies"
+  True
+
+----
+
+Equality Operators
+==================
+
+::
+
+  >>> 
 
 ----
 
