@@ -33,8 +33,8 @@ Who's Here
 ==========
 
 - Paul (me)
-- Andy
-- Jon
+- Tobi
+
 
 ----
 
@@ -76,11 +76,15 @@ A Text Editor
 
 A Command Line
 --------------
-
+``...``
 
 ----
 
-<Picture of command line here>
+.. image:: media/command_line.jpg
+  :height: 300px
+
+.. image:: media/Screenshot-Terminal.png
+  :height: 300px
 
 ----
 
@@ -246,104 +250,264 @@ Equality Operators
 Equality Operators
 ==================
 
+Try these...
+
 ::
 
-  >>> 
+  >>> 'Pi' == 'Pi'
+  >>> 'Pi' == 3.14
+  >>> 3.14 == 3.14
 
 ----
 
 Bools
+=====
 
-True & False
+There are only two. 
 
-examples
+``True`` & ``False``
 
-----
+::
 
+  >>> True
+  True
 
-Boolean exercise
-Example::
+::
 
-  if 1:
-    print ('Ziggy Zag')
+  >>> if True:
+          do this ...
 
-  if 0:
-    print ('Ancient Fossils')
+::
 
-----
-
-Truthy & Falsy
-
-examples of truthy things
-
-falsy things
+  >>> there_will_be_dancing = True
 
 ----
 
-The `not` operator
+Bools
+=====
+
+Try these...
+
+::
+
+  >>> if True:
+          print ('Ziggy Zag')
+
+::
+
+  >>> if False:
+          print ('Ancient Fossils')
+
+----
+
+Bools
+=====
+
+Other values (like numbers, strings, and variables)
+can be ``Truthy`` or ``Falsy``.
+
+::
+
+  >>> if there_will_be_dancing:
+          put_on_dancing_shoes()
+
+::
+  
+  >>> while there_will_be_dancing:
+          drink_plenty_of_fluids()
+
+----
+
+Bools
+=====
+
+Falsy objects...
+----------------
+
+- ``None``
+- ``False``
+- Zero of any numeric type; ``0``, ``0L``, ``0.0``, ``0j``.
+- Any empty sequence, for example, ``''``, ``()``, ``[]``.
+- Any empty mapping, for example, ``{}``.
+- Class instances, sometimes (more on this later)
+
+----
+
+Bools
+=====
+
+Truthy objects...
+-----------------
+
+- Eveything else
+
+----
+
+Bools
+=====
+
+The ``not`` operator
+--------------------
+
+::
+
+  >>> if not True:
+          handle_a_false_case
+
+----
+
+Bools
+=====
+
+Try these...
+
+::
+
+  >>> if "":
+          print ('Mango')
+  >>> if not "":
+          print ('Sushi')
+  >>> if 500:
+          print ('Indy')
+  >>> if None:
+          print (5)
+  >>> if ():
+          print ('Tuples!')
 
 ----
 
 Strings!
 ========
 
-<pic of strings>
+.. image:: media/business-cat-meme-the-sales-contract-had-strings-attached.jpg
+  :width: 450px
 
 ----
 
-"I'm a string!"
+Strings
+=======
+
+``"I'm a string!"``
 
 What makes a string a string?
 
+::
+
+  >>> 'single quotes!'
+  >>> "double quotes!"
+  >>> str(10)
+
 ----
 
-Examples of strings
+Strings
+=======
 
-----
+Try these...
 
-String exercises
+::
+
+  >>> "Who's there?"
+  >>> '1'
+  >>> ''
+  >>> str(7)
 
 ---- 
 
-How to join strings the more expensive way
+Strings
+=======
 
-"a" + "b"
+Joining Strings (Concatenation)
+-------------------------------
 
-----
+The more expensive way
 
-strings joining exercises
+::
 
-----
-
-`print`!
-========
-
-what does it do?
-
-the >>> job is to hand us back a value so it prints almost everything
-
-but later on when we want to put this into a script and not run 
-it from repl, we will want to see our results. We need some way
-to tell python, hand back the result to the screen.
-
-print in 2 `print`
-print in 3 `print()`
+  >>> 'a' + 'b' + 'c'
+  'abc'
+  >>> '1' + '2' + '3'
+  '123'
 
 ----
 
-print examples
+Strings
+=======
+
+Try these...
+
+::
+
+  >>> 'Hello' + 'World'
+  >>> 'Hello' + ' ' + 'World'
 
 ----
 
-print excersises
+``print``!
+==========
+
+What does it do?
+----------------
+
+The job of ``>>>`` (REPL) is to print, so it prints almost everything.
+
+But what if we want to make a script out side of a REPL?
+
+We need some way to tell python to print something to the screen.
+
+- print in Python 2    
+  - ``print``
+- print in Python 3
+  - ``print()``
+
+We will be using ``print ()`` for the rest of this tutorial.
 
 ----
 
-Comments
+``print``
+=========
+
+::
+
+  >>> print ('Moose!')
+  Moose
+  >>> print (-1)
+  -1
+  >>> print ('')
+
+  >>>
+
+----
+
+``print``
+=========
+
+Try these...
+
+::
+
+  >>> print ('New York')
+  >>> print (2014 * 1e10)
+  >>> print ()
+
+----
+
+Comments & Docstrings
+=====================
 
 I want some words to remember what I was doing here
-but I don't want them to print out or even be read
-by python
+but I don't want them to print out.
+
+::
+  
+  # I am a comment. I have to stay on one line.
+
+
+  """
+  I am a docstring.
+  I can span
+    multiple lines
+      and can preserve indentation!
+  """
 
 ----
 
