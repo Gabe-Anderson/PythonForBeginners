@@ -19,13 +19,13 @@ Python for Beginners: Part I
 =========  =====
 WiFi
 ================
-SSID:       *<POP>*
+SSID:       *<>*
 Passowrd:   *<>*
 =========  =====
 
 Thursday, Feb. 27th 2014
 
-<Location>
+Tipping Point Partners
 
 ----
 
@@ -512,88 +512,382 @@ but I don't want them to print out.
 ----
 
 Variables
+=========
 
-What is a variable
+What is a variable?
 
-A box to but a value in, a way to store a value
+A box to but a value in, a way to store a value for later.
 
-----
-
-Variables examples
-
-----
-
-Variables exercises with numbers
+.. image:: media/Nickel-in-a-box.jpg
+  :width: 550px
 
 ----
 
-Variable exercises with strings
+Variables
+=========
+
+::
+
+  >>> color_of_my_shoes = 'Green'
+  >>> cm_in_1_light_year = 9.4605284 * 1e17
+  >>> years_in_a_year = 1
+
+- alphanumeric + underscores
+- can not start with a number
 
 ----
 
-variable exercises with bools
+Variables
+=========
+
+Try these...
+
+::
+
+  >>> days_in_week = 7
+  >>> weeks = 2
+  >>> days_in_week * weeks
 
 ----
 
-logic examples with variables
+Variables
+=========
+
+Try these...
+
+::
+  
+  >>> day = 'Monday'
+  >>> print day
 
 ----
 
-BREAK
+Variables
+=========
+
+Try these...
+
+::
+
+  >>> park_is_open = True
+  >>> if park_is_open:
+          print 'Picnic!'
+
+----
+
+Break
+=====
+
+.. image:: media/break
 
 ----
 
 Data Structures
 ===============
 
+- Lists           ``[]`` or ``list()``
+- Tuples          ``()`` or ``tuple()``
+- Dictionaries    ``{}`` or ``dict()``
+
+::
+ 
+ >>> [1, 2, 3]
+ [1, 2, 3]
+ >>> ('one', 2.0, 3)
+ (1, 2, 3)
+ >>> {1: 'jake', 2: 'jill', 'three': 'hill'}
+ {'three': 'hill', 1: 'jake', 2: 'jill'}
+
+----
+
 Lists
+=====
+An ordered arrangement of items
+-------------------------------
+
+Lists are mutable, meaning you can change 
+them after they have been defined for the first 
+time.
+
+Lets make one...
+
+:: 
+
+  >>> lst = ['uno', 'dos', 'tres', 'quatro', 'cinco']
+
+How do we get the values out?
 
 ----
 
-Lists Examples
+Lists
+=====
+Indexing
+--------
+
+Lets look into ``lst``...
+
+::
+
+  ['uno', 'dos', 'tres', 'quatro', 'cinco']
+     0      1      2        3         4
+
+::
+
+  >>> lst[2]
+  'tres'
+  >>> lst[4]
+  'cinco'
+  >>> lst[1]
+  'uno'
 
 ----
 
-List Excersies
+Lists
+=====
+Indexing
+--------
+
+How do we set values?
+
+:: 
+
+  >>> lst[4] = 'cinq'
+  >>> lst
+  ['uno', 'dos', 'tres', 'quatro', 'cinq']
+
+----
+
+Tuples
+======
+
+Tuples like lists but are immutable.
+
+We use the same syntax (ie. ``[]``) to index into 
+a tuple.
+
+::
+
+  >>> tup = ('uno', 'dos', 'tres', 'quatro', 'cinco')
+  >>> tup[2]
+  'tres'
+  >>> tup[0]
+  'uno'
+
+But we can not set values of a tuple.
+
+:: 
+
+  >>> tup[1] = 'catdog'
+  Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  TypeError: 'tuple' object does not support item assignment
+
+----
+
+Lists & Tuples
+==============
+ie. sequences
+-------------
+
+We can join sequences!
+
+:: 
+  
+  >>> [1] + [2]
+  [1, 2]
+  >>> (1, 2) + (2, 3)
+  (1, 2, 2, 3)
+
+----
+
+Lists & Tuples
+==============
+ie. sequences
+-------------
+
+Try this...
+
+- Build a list containing 2 tuples. 
+  
+  - The tuples can contain anything.
+
+- Build a tuple of lists.
+
+  - The lists should contain only 1 element each.
+
+- Make a tuple with only 1 element.
+
+----
+
+Lists & Tuples
+==============
+ie. sequences
+-------------
+
+::
+
+  >>> [(1, 2, 3), (4, 5, 6)]
+  [(1, 2, 3), (4, 5, 6)]
+
+::
+  
+  >>> ([1], [2], [3])
+  ([1], [2], [3])
+
+:: 
+
+  >>> (1,)
+  (1,)
 
 ----
 
 Dictionaries
+============
+
+- Does not keep things ordered.
+- Can find something by name (ie. key).
+- Can not find something by index.
+
+::
+
+  >>> d = {'name': 'Paul', 'phone': 5554443333, 'temp': 98.6}
+  >>> d
+  {'name': 'Paul', 'temp': 98.6, 'phone': 5554443333}
+  >>> d['phone']
+  5554443333
+
+This is great for groups of related but heterogenous data!
 
 ----
 
-Why use a dictionary over a list
+Dictionaries
+============
+
+Why use a dictionary over a list?
+
+- Purpose of code can be clearer.
+
+  - ``ball['color']`` clearer than ``ball[4]``
+
+- Existance checks can be faster.
 
 ----
 
-Dictionary examples
+Dictionaries
+============
+
+Try these...
+
+::
+
+  >>> d = {'name': '<yours>', 'favorite_dish': '<yours>'}
+  >>> d['name']
 
 ----
 
-Dictionary excersises
+Command Line
+============
+Running a Script
+----------------
+
+- Open a text editor.
+- Write python code.
+- Save as a ``.py`` file. 
+
+  - (fyi. any file extension will work for us right now)
+
+- At command line, run file as a ``python`` argument.
+
+----
+
+Command Line
+============
+Running a Script
+----------------
+
+:: 
+
+  my-mac$ python myscript.py
+
+:: 
+
+  C:\my-pc> python myscript.py
+
+----
+
+Command Line
+============
+Running a Script
+----------------
+
+Try this...
+
+Open text editor and enter this...
+
+:: 
+
+  print ('Hello You!')
+
+Save file as myscript.py to an easy to get to folder/directory.
+
+On the command line, navigate to that directory.
+
+:: 
+
+  $ cd /dir/i/saved/my/file/in
+  $ python myscript.py
+  Hello You!
+
+---- 
+
+Conditionals
+============
+
+We can control flow!
+
+In ``myscript.py``, enter this...
+
+::
+
+  going_to_fast = True
+  if going_to_fast:
+    print ('slow down')
+  else:
+    print ('perfect')
+
+And then run ``myscript.py`` at the command line.
 
 ----
 
 Conditionals
 ============
 
-if elif else 
+In myscript.py, enter this...
 
-----
+::
 
-Conditional examples
+  speed = 'slow'
+  if speed == 'fast':
+    print ('slow down')
+  elif speed == 'slow':
+    print ('speed up')
+  else:
+    print ('perfect')
 
-----
-
-Conditional excersices
+And then run ``myscript.py`` at the command line.
 
 ----
 
 Loops!
 ======
 
-while 
-for
+- ``while:`` 
+
+  - while a condition is true, do something
+
+- ``for <item> in <iterable>:``
+
+  - for each ``item`` in ``<iterable>``, do something 
 
 ----
 
