@@ -40,12 +40,12 @@ Who's Here
 
 Special Thanks
 ==============
-
 Barbara Shaurette
 -----------------
 
-Many of these presentations slides are copies of or 
-based off of `her slides`_.
+|
+| Many of these presentation's slides are copies of or based off of 
+| `her slides`_.
 
 .. _her slides: https://github.com/mechanicalgirl/intro-to-python/blob/master/IntrotoPython_Austin_July202013.pdf
 
@@ -532,6 +532,11 @@ Variables
   >>> cm_in_1_light_year = 9.4605284 * 1e17
   >>> years_in_a_year = 1
 
+|
+
+Variable name rules...
+----------------------
+
 - alphanumeric + underscores
 - can not start with a number
 
@@ -575,10 +580,11 @@ Try these...
 
 ----
 
-Break
-=====
+Break Time
+==========
 
-.. image:: media/break
+.. image:: media/kangaroo.jpg
+  :width: 520px
 
 ----
 
@@ -824,7 +830,7 @@ Try this...
 
 Open text editor and enter this...
 
-:: 
+.. code:: python
 
   print ('Hello You!')
 
@@ -847,7 +853,7 @@ We can control flow!
 
 In ``myscript.py``, enter this...
 
-::
+.. code:: python
 
   going_to_fast = True
   if going_to_fast:
@@ -862,9 +868,9 @@ And then run ``myscript.py`` at the command line.
 Conditionals
 ============
 
-In myscript.py, enter this...
+In ``myscript.py``, enter this...
 
-::
+.. code:: python
 
   speed = 'slow'
   if speed == 'fast':
@@ -891,85 +897,225 @@ Loops!
 
 ----
 
-while examples
+``while``
+=========
+
+.. code::python
+
+  x = 10
+  while x > 0:
+      print (x)
+
+.. code:: python
+
+  while True:
+      print ('this is the line that never ends because')
 
 ----
 
-while excersies
+``while``
+=========
+
+Try this...
+
+.. code:: python
+
+  x = 0
+  while x < 10:
+      print (x + 2) 
 
 ----
 
-while else
+``for``
+=======
+
+.. code:: python
+
+  lst = [1, 'dos', 3, 'Quatre']
+  for item in list:
+      do_something_with_item(item)
 
 ----
 
-for in 
+``for``
+=======
+
+Try this...
+
+.. code:: python
+
+  lst = [1, 2, 3, 4]
+  for item in list:
+      print (item * item)
 
 ----
 
-for in examples
-
-----
-
-for in excersies
-
-----
-
+Errors and Exceptions
+=====================
 Errors
+------
+
+There is an issue... 
+
+::
+
+  >>> if True
+    File "<stdin>", line 1
+      if True
+            ^
+  SyntaxError: invalid syntax
 
 ----
 
-Errors examples
+Errors and Exceptions
+=====================
+Exceptions
+----------
+
+An issue came up while running... 
+
+::
+
+  >>> 1 / 0
+  Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+  ZeroDivisionError: division by zero
 
 ----
 
-Error excersises
+Errors and Exceptions
+=====================
 
-----
+Lets look at this...
 
-Exercises parse a traceback and tell me whats going on
+:: 
+
+  Traceback (most recent call last):
+  File "/Users/paul/.virtualenvs/fifteen5/lib/python2.7/\
+        site-packages/django/core/management/base.py", 
+        line 222, in run_from_argv
+    self.execute(*args, **options.__dict__)
+  File "/Users/paul/.virtualenvs/fifteen5/lib/python2.7/\
+        site-packages/django/core/management/base.py", 
+        line 257, in execute
+    output = self.handle(*args, **options)
+  File "/Users/paul/Code/python/15five/fifteen5/ff/
+        management/commands/delete_company_export.py", 
+        line 117, in handle
+    raise CommandError('No option flag found for ...
+    CommandError: No option flag found for selecting which 
+    builds to delete. Please run command with at least one 
+    selector option flag.
 
 ----
 
 Functions
 =========
 
-I wanna do it again
+- write once
+- accopmlishes one thing well
+- can be called over and over
+- can be used in other functions
+
+.. code:: python
+
+    def get_ready_for_party(time):
+        party_time = time + timezone_offset
+        send_out_party_invites()
+        clean_house()
 
 ----
 
 Functions
+=========
+
+.. code:: python
+
+  def function_name(arg1, arg2, 
+                    kwarg1=0, kwarg2='Hot Pants!'):
+      do something with args and kwargs
+
+.. code:: python
+
+  def max(x, y):
+      if x >= y:
+          return x
+      else:
+          return y
+
+pep8_ is the defacto style guide for Python.
+
+.. _pep8: http://legacy.python.org/dev/peps/pep-0008/
 
 ----
 
-Functions examples
+Functions
+=========
+
+Try this...
+
+Build a function that takes two arguments and finds
+the sum of their repsective squares.
 
 ----
 
-Functions excersises
+Functions
+=========
+
+.. code:: python
+
+    def sum_squares(x, y):
+        return x*x + y**2
 
 ----
+
+Functions
+=========
 
 Could we have a function that returns a function?
 
 ----
 
-raw_input excersise
+``import``
+==========
+
+I want to use someone else's functions!
+
+:: 
+
+  >>> import math
+  >>> math.factorial(4)
+  24
+
+::
+
+  >>> from math import factorial
+  >>> factorial(4)
+  24
+
+::
+
+  >>> from math import factorial as f
+  >>> f(4)
+  24
 
 ----
 
-import
-======
+``import``
+==========
 
-I want to use someone else's functions
+Try this...
 
-----
+:: 
 
-import examples
+  >>> import time
+  >>> time.gmtime()
+  >>> time.localtime()
 
-----
+::
 
-import excersises
+  >>> import sys
+  >>> sys.platform
 
 ----
 
@@ -978,26 +1124,52 @@ Objects
 
 I want to make functions that go with my data.
 
-----
+Objects can have functions (ie. *methods*) that 
+act on my data.
 
-Object examples
+.. code:: python
 
-----
+  c = Cat()
+  c.age = 5
+  c.wrangle()
 
-Objects excersises
+.. code:: python
+
+  p = Potato()
+  p.wieght = 150
+  p.toss()
 
 ----
 
 Thanks!
+=======
+
+- Tobi
+- George Calle
+- Nancy Ellis (Pang)
+- Andy Dirnberger
 
 ----
 
-Check out these meetups!
+Other Meetups!
+==============
+
+- `NYC Python Meetup`_
+- `Flask NYC`_
+
+.. _`NYC Python Meetup`: http://www.meetup.com/nycpython
+.. _`Flask NYC`: http://www.meetup.com/flask-nyc
 
 ----
 
 Bibliography
+============
 
+- stackoverflow_
+- `The Python Website`_
+- `Barbara Shaurette`_
 
-
+.. _stackoverflow: http://stackoverflow.com/
+.. _`The Python Website`: http://www.python.org/
+.. _`Barbara Shaurette`: https://github.com/mechanicalgirl/intro-to-python/blob/master/IntrotoPython_Austin_July202013.pdf
 
