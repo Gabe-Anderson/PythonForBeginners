@@ -16,12 +16,11 @@ Python for Beginners: Part I
   :width: 200
   :scale: 50
 
-=========  =====
-WiFi
-================
-SSID:       *<>*
-Passowrd:   *<>*
-=========  =====
+
+
+| SLIDES: **http://logston.github.io/PythonForBeginners**
+| SSID:       **Tipping Point**
+| Passowrd:   **cr1t1cal**
 
 Thursday, Feb. 27th 2014
 
@@ -34,7 +33,9 @@ Who's Here
 
 - Paul (me)
 - Tobi
-
+- Lauren
+- Spike
+- Christie
 
 ----
 
@@ -586,6 +587,9 @@ Break Time
 .. image:: media/kangaroo.jpg
   :width: 520px
 
+5 min
+-----
+
 ----
 
 Data Structures
@@ -855,8 +859,8 @@ In ``myscript.py``, enter this...
 
 .. code:: python
 
-  going_to_fast = True
-  if going_to_fast:
+  going_too_fast = True
+  if going_too_fast:
     print ('slow down')
   else:
     print ('perfect')
@@ -1013,7 +1017,7 @@ Functions
 =========
 
 - write once
-- accopmlishes one thing well
+- accomplishes one thing well
 - can be called over and over
 - can be used in other functions
 
@@ -1033,7 +1037,7 @@ Functions
 
   def function_name(arg1, arg2, 
                     kwarg1=0, kwarg2='Hot Pants!'):
-      do something with args and kwargs
+      # do something with args and kwargs
 
 .. code:: python
 
@@ -1148,6 +1152,9 @@ Thanks!
 - George Calle
 - Nancy Ellis (Pang)
 - Andy Dirnberger
+- Lauren
+- Spike
+- Christie
 
 ----
 
